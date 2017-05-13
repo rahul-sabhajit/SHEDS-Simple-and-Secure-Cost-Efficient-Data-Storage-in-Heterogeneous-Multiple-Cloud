@@ -1,0 +1,194 @@
+create database selcsp;
+
+
+
+use selcsp;
+
+
+
+create table selcsp_owner(
+id int(11) NOT NULL auto_increment,
+
+name text,
+pass text,
+email text,
+mobile text,
+addr text,
+dob text,
+gender text,
+location text,
+servicetime text,
+imagess longblob,
+PRIMARY KEY  (id)
+);
+
+
+create table selcsp_enduser(
+id int(11) NOT NULL auto_increment,
+
+name text,
+pass text,
+email text,
+mobile text,
+addr text,
+dob text,
+gender text,
+location text,
+servicetime text,
+imagess longblob,
+PRIMARY KEY  (id)
+);
+
+
+
+CREATE TABLE admin (
+	username VARCHAR(50),
+	password VARCHAR(50)
+) ;
+
+
+insert into admin values ('admin','admin');
+
+
+
+CREATE TABLE selcsp_cloud(
+	username VARCHAR(50),
+	password VARCHAR(50),
+	cname VARCHAR(50)
+) ;
+
+insert into selcsp_cloud values ('cloud','cloud','CS1');
+
+insert into selcsp_cloud values ('cloud1','cloud','CS2');
+
+insert into selcsp_cloud values ('cloud2','cloud','CS3');
+
+insert into selcsp_cloud values ('cloud3','cloud','CS4');
+
+
+
+
+CREATE TABLE seltcp_tpa (
+	username VARCHAR(50),
+	password VARCHAR(50)
+) ;
+
+
+
+insert into seltcp_tpa values ('owner','owner');
+
+ 
+
+create table selcsp_cloudserver(
+id int(11) NOT NULL auto_increment,
+
+fname text,
+ct text,
+mac text,
+sk text,
+rank int,
+dt text,
+ownername text,
+PRIMARY KEY  (id));
+
+
+
+
+create table seltcp_tparbi(
+id int(11) NOT NULL auto_increment,
+
+fname text,
+mac text,
+sk text,
+rank int,
+dt text,
+ownername text,
+PRIMARY KEY  (id));
+
+
+create table selcsp_review(
+id int(11) NOT NULL auto_increment,
+
+cname text,
+ct text,
+rating int,
+dt text,
+PRIMARY KEY  (id));
+
+
+
+create table selcsp_recomend(
+id int(11) NOT NULL auto_increment,
+
+cname text,
+uname text,
+ct text,
+dt text,
+PRIMARY KEY  (id));
+
+
+
+create table selcsp_feedback(
+id int(11) NOT NULL auto_increment,
+
+cname text,
+uname text,
+ct text,
+dt text,
+PRIMARY KEY  (id));
+
+
+
+create table selcsp_request(
+id int(11) NOT NULL auto_increment,
+
+user text,
+cname text,
+fname text,
+req text,
+PRIMARY KEY  (id));
+
+
+
+create table selcsp_response(
+id int(11) NOT NULL auto_increment,
+
+user text,
+cname text,
+fname text,
+req text,
+PRIMARY KEY  (id));
+
+
+
+create table selcsp_Transaction(
+id int(11) NOT NULL auto_increment,
+user text,
+fname text,
+cname text,
+sk text,
+task text,
+dt text,
+PRIMARY KEY (id));
+
+
+
+create table selcsp_Attacker(
+id int(11) NOT NULL auto_increment,
+user text,
+fname text,
+cname text, 
+sk text,
+type text,
+dt text,
+PRIMARY KEY (id));
+
+
+
+create table search(
+id int(11) NOT NULL auto_increment,
+user text,
+keyword text,
+permission text, 
+dt text,
+PRIMARY KEY (id));
