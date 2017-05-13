@@ -9,13 +9,19 @@ https://rahul-sabhajit.github.io/SHEDS-Simple-and-Secure-Cost-Efficient-Data-Sto
 # Research Paper
 http://www.ijptonline.com/wp-content/uploads/2017/01/26058-26065.pdf
 
-# Download repository
+# Installation Guide
+First Step:
+ Download repository
+
 # Requirements:
+Second Step:
+
 1-Mysql Workbench
 
 2-Java
 
 3-Sql Server
 # import the database
+Third Step:
 open connect.jsp file change the database name and password
 and........enjoy
